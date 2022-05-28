@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bookies</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='rating.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Merriweather:400,700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            /*background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);*/
+            background-color: #eb5353;
+        }
+        .form-container{
+            width: 40%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background: linear-gradient(180deg,#0D1544,#272F5D);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+        }
+        .form-container div {
+            margin: 20px 0;
+        }
+        textarea{
+            width: 500px;
+            height: 200px;
+            display: block;
+            width: 100%;
+            /* border: none; */
+            border: 1px solid #ddd;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+            /* outline: none; */
+            margin-top: 16px;
+            height: 150px;
+            background-color: transparent;
+            padding: 10px 16px 10px 30px;
+            color: #fff;
+                font-family: lato;
+        }
+        textarea::placeholder{
+            color:white;
+            font-size: 1.3rem;
+        }
+        button{
+            display: block;
+            width: 80px;
+        }
+        .button-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        .fa-star{
+            color: rgb(235, 193, 24);
+        }
+        button{
+            width: 100px;
+            border: 1px solid #D54C76;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        padding: 10px 0px;
+        outline: none;
+        margin-top: 30px;
+        cursor: pointer;
+        background-color: #eb5353;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #fff;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 50px;
+        margin-bottom: 15px;
+        }
+        .edit,.text{
+            margin: auto;
+            width: 50%;
+            text-align: center;
+            color: whitesmoke;
+            margin-top: 20px;
+        }
+        .edit{
+            /*font-size: 2rem;*/
+            margin-bottom: 20px;
+        }
+        .text{
+            /*font-size: 3rem;*/
+            font-size: larger;
+            margin-bottom: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <div class="text" style="font-family: Merriweather;">Your rating will contribute to the community </div>
+        
+        </div>
+        <div class="form-container">
+        <form action="{{url_for('change')}}" method="POST" style="display: flex;flex-direction:column">
+            <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5" value="5">
+                <label for="rate-5" class="fas fa-star" ></label>
+                <input type="radio" name="rate" id="rate-4" value="4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3" value="3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2" value="2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1" value="1">
+                <label for="rate-1" class="fas fa-star"></label>
+            </div>
+            <div class="textarea" style="margin: auto;">
+                <!--<textarea cols="30" placeholder="Describe your experience.."></textarea>-->
+                <input type="number" name="book_id" placeholder="Enter the book id">
+                <div class="button-wrapper">
+                    <button type="submit" class="btn">RATE</button>
+                </div>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    </body>
+</html>

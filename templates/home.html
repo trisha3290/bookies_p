@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Merriweather:400,700&display=swap" rel="stylesheet"> {% if title %}
+    <link href="{{ url_for('static', filename='search.css') }}" type="text/css" rel="stylesheet">
+    <title> Bookies- {{ title }} </title>
+    {% else %}
+    <link href="{{  url_for('static', filename='home.css')}}" type="text/css" rel="stylesheet">
+    <title>Bookies</title>
+    {% endif %}
+</head>
+
+<body>
+    <nav class=" text-center navbar navbar-expand-md navbar-dark bg-custom" style="background-color: #EB5353;">
+        <a class="navbar-brand" href="{{ url_for('home') }}"><span class="r-name" style="margin-left: 0px;">Bookies</span></a>
+        <!--<span class="r-name" style="color: #F2F2f2;margin-left: 850px;">Login</span>
+        <span class="r-name" href="{{ url_for('home') }}" style="color: #F2F2f2;margin-left: 20px;margin-right: 10px;">Sign Up</span>
+        <span class="r-name" href="{{ url_for('home') }}" style="color: #F2F2f2;margin-left: 20px;margin-right: 0px;">About us</span>-->
+        <!--<button class="more-info" style="background-color: #f2f2f2;margin-left: 950px;margin-right:20px;border: none;color:#EB5353;border-radius:5px"><a href="http://127.0.0.1:5000/signup" style="color: #eb5353;">Sign Up</a></button>-->
+        {% if user["is_logged_in"] %}
+        <p style="margin-left: 30px;color:white;">Hi, {{user["name"]}}</p>
+        <button class="more-info" style="background-color: #f2f2f2;border: none;color:#EB5353;border-radius:5px;margin-left: 1000px;"><a href="http://127.0.0.1:5000/logout" style="color: #eb5353">Logout</a></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        {% else %}    
+        <button class="more-info" style="background-color: #f2f2f2;margin-left: 950px;margin-right:20px;border: none;color:#EB5353;border-radius:5px"><a href="http://127.0.0.1:5000/signup" style="color: #eb5353;">Sign Up</a></button>   
+        <button class="more-info" style="background-color: #f2f2f2;border: none;color:#EB5353;border-radius:5px;"><a href="http://127.0.0.1:5000/login" style="color: #eb5353">Login</a></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+      
+      {% endif %}
+    </nav>
+    <div class="container align-items-center">
+        <div class="jumbotron text-center bg-jumbo" style="background: rgb(12, 12, 12, 0.4) !important; ">
+           <!-- <h1 style="color: rgb(0, 255, 42); font-weight: bolder; font-size: 50px;">  <span style="color: rgb(114, 235, 225);"> Foodie </span> </h1>-->
+            <p class="lead" style="color: #F2F2f2;">Want to read but cannot decide what to?</p><br />
+            <p class="lead">We are there to help you out!!! Add your favorite genre, age and author to get the best recommendation from us <i class='fa fa-book'></i></p><br />
+            <p>So, let <span style="color: #F2F2f2; font-size: large;"><b>Bookies</b></span> help you!</p>
+            <br />
+            <!--<div class="container justify-content-start">-->
+                <div class="container align-items-center">
+                <form action="{{ url_for('search') }}" method="POST">
+                    <div class="row" style="margin-left: 200px;">
+                        <div class="col-12 col-md-2">
+                            <div class="form-group">
+                                <input type="number" class="form-control" min="1" id="people" name="age" placeholder="Age" required>
+                            </div>
+                        </div>
+                      
+                        <div class="col-12 col-md-3">
+                            <div class="form-group">
+                                <select class="custom-select" id="cuisine" name="genre" placeholder="Cuisine">
+                                    <option value="none">Select a genre</option>                
+                                    <option value="fiction">fiction</option><option value="epic">Epic</option><option value="humour">Humour</option>
+                                    <option value="horror">Horror</option><option value="mystery">Mystery</option><option value="love">Love</option>
+                                    <option value="sci-fi">Sci-fi</option><option value="autobiography">Autobiography</option><option value="fantasy">Fantasy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="form-group">
+                                <select class="custom-select" id="locality" name="author" placeholder="Locality">
+                                    <option value="none">Select an Author</option>
+                                    <option value="JK Rowling">JK Rowling</option><option value="R.K. Narayan">R.K. Narayan</option><option value="Chetan Bhagat">Chetan Bhagat</option>
+                                    <option value="APJ Abdul Kalam">APJ Abdul Kalam</option><option value="Enid Blyton">Enid Blyton</option><option value="Ruskin Bond">Ruskin Bond</option>
+                                   </select>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center" style="margin-top: 5vh;">
+                        <div class="col-12">
+                            {% if user["is_logged_in"] %}
+                            <button class="submit-button" style="background-color:  #EB5353;">Search</button>
+                            {% else %}
+                            <button class="submit-button" style="background-color:  #EB5353;" disabled>Search</button>
+                            {% endif %}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <div class=" text-center" style="padding: 0.2rem;background: rgb(12, 12, 12, 0.6);border: solid purple 2px;">
+            <span style="color: white; font-weight: bold;">Copyright &#169 <b style="color: #F2F2f2;">Trisha</b></span>&emsp;
+            <a target="_blank " style="font-size:xx-large; color: #d5d7da; " href="https://github.com/trisha3290 "><i class="fa fa-github " aria-hidden="true "></i></a>&emsp;
+            <a target="_blank " style="font-size:xx-large; color: #0077B5; " href="https://www.linkedin.com/in/trisha-kumari-a4693a217/ "><i class="fa fa-linkedin-square " aria-hidden="true "></i>
+            </i></a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+</body>
+
+</html>

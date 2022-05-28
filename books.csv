@@ -1,0 +1,45 @@
+index,genre,author,book_name,rating,age,link,votes
+0,mystery,Nita Prose,The Maid,4.5,18,https://read.amazon.in/kp/embed?asin=B08R8SH69Y&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_80Q9GCWH3HZ55X8N8BQ7,1000
+1,love,Xochitl Gongalez,Olga Dies Dreaming,4.7,18,https://www.amazon.in/dp/B0956ZYK2B/ref=cm_sw_r_wa_apa_WDC01DEQ3JTC6GDRC8DX,1001
+2,fiction,Hanya Yanagihara,To Paradise,4.3,18,https://www.amazon.in/dp/1529077486/ref=cm_sw_r_wa_apa_i_QEN2CH7D4ZSAATS7WYPG,1000
+3,love,Chetan Bhagat,2 states,4.0,18,https://www.amazon.in/dp/8129135523/ref=cm_sw_r_wa_apa_i_2KQYQF8V87RF1BZTVA4P,1000
+4,fiction,Chetan Bhagat,The 3 mistakes of my life,4.8,18,https://www.amazon.in/dp/8129135515/ref=cm_sw_r_wa_apa_i_dl_AD985SGCQA921FNFCBT1,1000
+5,fiction,R.K. Narayan,Swami and Friends,3.4,5,https://www.amazon.in/dp/8185986002/ref=cm_sw_r_wa_apa_i_023YTMPG87E0YERKVWD9,1200
+6,sci-fi,Harry Harrison,The stainless steel rat,4.7,5,https://www.amazon.in/dp/0765302780/ref=cm_sw_r_wa_apa_i_R3QAZ3T3AG6CZ8AARPW1?_encoding=UTF8&psc=1,1109
+7,social,Jane Austen,Pride and Precjudice,4.5,20,https://www.amazon.in/dp/8172344503/ref=cm_sw_r_wa_apa_i_dl_D6VWPWVGTFMT9TNJQJB6,1200
+8,sci-fi,Harry Harrison,Bill: The galactic hero,4.3,5,https://www.amazon.in/dp/B009HCAI9K/ref=cm_sw_r_wa_apa_1B0Z25S2EPCDKTB9B0D3,906
+9,love,Trisha Alexander,With this wedding ring,3.9,25,https://www.amazon.in/dp/B07MYW7YPY/ref=cm_sw_r_wa_apa_1B76Z3BVG0674SZF5CQV,1206
+10,travel,Jim Keeble,Independence Day: A voyage around America ,3.7,12,https://www.amazon.in/dp/0349112959/ref=cm_sw_r_wa_apa_i_8GY2PKC2HM0XX0GKCGS7,700
+11,fiction,Paul Coelho,The Alchemist,4.5,12,https://www.amazon.in/dp/8172234988/ref=cm_sw_r_wa_apa_i_X4X44PDZQMA7XZW4CCS7,1268
+12,spiritual,Judy Dyer,Empath,4.2,25,https://www.amazon.in/dp/1989588131/ref=cm_sw_r_wa_apa_i_A1STW5Z76G864YDBHEK0?_encoding=UTF8&psc=1,1150
+13,spiritual,Dr. Dara Goldberg,Awaken your inner Goddess,4.1,25,https://www.amazon.in/dp/B074GPMTC3/ref=cm_sw_r_wa_apa_8SPW5FHPHE836S6TPXXQ,1100
+14,sci-fi,Harry Harrison,Make room! Make room!,4.5,20,https://www.amazon.in/dp/014119023X/ref=cm_sw_r_wa_apa_i_2PYW2VY5M0WR3H38RXQV,1117
+15,spiritual,Anjali Kumar,Stalking God,3.0,12,https://www.amazon.in/dp/1409181634/ref=cm_sw_r_wa_apa_i_MBKX1X255SX9350D62KM,1200
+16,spiritual,Parth P Vyas,Your Vibration is the Key,4.0,12,https://www.amazon.in/dp/9391529062/ref=cm_sw_r_wa_apa_i_Q5BPQRT8Y1KADQW5F31W,1208
+17,love,Durjoy Datta,The perfect us,3.9,20,https://www.amazon.in/dp/0143426591/ref=cm_sw_r_wa_apa_i_ANYPDA4C08Q02WGQVMJJ,1090
+18,love,Ajay k Pandey,Her last wish,4.2,20,https://www.amazon.in/dp/9382665870/ref=cm_sw_r_wa_apa_i_WFA051F12KAZT0X8960Q?_encoding=UTF8&psc=1,980
+19,sci-fi,H G Wells,The time machine,4.5,5,https://www.amazon.in/dp/8175992956/ref=cm_sw_r_wa_apa_i_dl_RWGF6FAP3QZTTPYB3E7J,710
+20,mystery,Anita Nair,Cut Like Wound,4.1,18,https://www.amazon.in/dp/9350293803/ref=cm_sw_r_wa_apa_i_V2QRR6WCQCJ3E1C7N102,871
+21,mystery,Alex Michaelides,Thew Silent Patient,3.8,18,https://www.amazon.in/dp/1409181634/ref=cm_sw_r_wa_apa_i_MBKX1X255SX9350D62KM,788
+22,fiction,Alice Walker,The Color Purple,5.0,12,https://www.amazon.in/dp/147460725X/ref=cm_sw_r_wa_apa_i_E77PR3B1XVYYWF2JZC31,945
+23,fiction,Khushwant Singh,Train to Pakistan,3.3,12,https://www.amazon.in/dp/0143065882/ref=cm_sw_r_wa_apa_i_TCYD1PA024Z2RZ1NVCFG,850
+24,travel,Bill Bryson,Down Under,4.1,12,https://www.amazon.in/dp/1784161837/ref=cm_sw_r_wa_apa_i_PCR8DNMHBPCFCBT77KYK,1185
+25,travel,Monisha Rajesh,Around India in 80 trains,4.3,12,https://www.amazon.in/dp/1408869756/ref=cm_sw_r_wa_apa_i_SDDQJS33QSFHWHRNBW95?_encoding=UTF8&psc=1,932
+26,fiction,APJ Abdul Kalam,The Ignited Minds,4.7,12,https://www.amazon.in/dp/B076Q4W6XY/ref=cm_sw_r_wa_apa_i_6NM9JM6CDD08P4DDZDAS,1033
+27,fiction,Napolean Hill,Think and Grow Rich,4.7,18,https://www.amazon.in/dp/9389931525/ref=cm_sw_r_wa_apa_i_dl_0W2G0JD283B92WC61AKT,1005
+28,fiction,APJ Abdul Kalam,Turning Points,4.5,18,https://www.amazon.in/dp/9350293471/ref=cm_sw_r_wa_apa_i_QYTB5R3KDKKREG97R8BK,1100
+29,horror,Oscar Wilde,Canterliver ghost,4.2,15,https://www.amazon.in/dp/0746060165/ref=cm_sw_r_wa_apa_i_C8A4NV53QNRQ803JXK93,1250
+30,horror,Bram Stocker,Dracula,3.9,18,https://www.amazon.in/dp/8124801347/ref=cm_sw_r_wa_apa_i_DE7GMF3KGP77WBC4P5KZ?_encoding=UTF8&psc=1,1100
+31,horror,Kiran Manral,The face at the window,4.2,15,https://www.amazon.in/dp/9381506787/ref=cm_sw_r_wa_apa_i_QNDVDVGST84YVMJBQ1RY,1303
+32,horror,Arnab ray,The mine,3.9,15,https://www.amazon.in/dp/9381626383/ref=cm_sw_r_apan_i_J9684Y3DGD7WSF9BWSNE,1319
+33,autobiography,Albert Einstein,The world as I see it,4.5,8,https://www.amazon.in/dp/9568356347/ref=cm_sw_r_apan_i_JM7EZ1T31H8XQFMJYEB9?_encoding=UTF8&psc=1,1070
+34,autobiography,Anne Frank,The diary of a young girl,4.4,15,https://www.amazon.in/dp/9388369165/ref=cm_sw_r_apan_i_211DXG7P9NFD89XBVSKP?_encoding=UTF8&psc=1,990
+35,autobiography,Nikola Tesla,My inventions,4.1,8,https://www.amazon.in/dp/9354401473/ref=cm_sw_r_apan_i_RJJGB44TDBH91VM62PPR,1398
+36,autobiography,Nelson Mandela,Long Walk to Freedom,4.5,15,https://www.amazon.in/dp/0349106533/ref=cm_sw_r_apan_i_W4Q23APBEN20RBVXBY5F,980
+37,mystery,Enid Blyton,Mystery of the burnt cottage,4.3,8,https://www.amazon.in/dp/B08FBYT8KX/ref=cm_sw_r_apan_AHZF74A10ZZFM3F23ZMY,799
+38,mystery,Enid Blyton,Mystery of the banshee towers,4.4,10,https://www.amazon.in/dp/B01EFR194E/ref=cm_sw_r_apan_VTN6NA2WFMTKPCKVA341,1001
+39,novel,Ruskin Bond,The cherry tree,4.3,10,https://www.amazon.in/dp/0143332457/ref=cm_sw_r_apan_i_BAJBER6C3KZADVCC5K4V,738
+40,epic,J. R. R. Tolkien,Lord of the rings,4.1,18,https://www.amazon.in/dp/0007488327/ref=cm_sw_r_wa_apa_i_FDREQKXESSMQ5RC42JN2,944
+41,fiction,J.K. Rowling,Harry Potter,4.0,20,https://read.amazon.in/kp/embed?asin=B01B3DKROQ&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_TD899F9SC3ZCP047BK13,1
+42,fiction,Jerome K Jerome,Three men in a boat,3.0,20,https://read.amazon.in/kp/embed?asin=B08954DZPJ&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_RV16W8X35YK9S5XB1E6R,1
+43,fiction,Sudha Murthy,How I Taught My Grandmother To Read,1.4,20,https://read.amazon.in/kp/embed?asin=B06XYPQBLH&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_96WG9PEB4V00N01NQNF9,19
