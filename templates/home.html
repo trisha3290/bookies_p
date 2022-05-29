@@ -18,13 +18,13 @@
 
 <body>
     <nav class=" text-center navbar navbar-expand-md navbar-dark bg-custom" style="background-color: #EB5353;">
-        <a class="navbar-brand" href="{{ url_for('home') }}"><span class="r-name" style="margin-left: 0px;">Bookies</span></a>
+        <a class="navbar-brand" href="{{ url_for('home') }}"><span class="r-name" style="margin-left: 0px;">BookWorld</span></a>
         <!--<span class="r-name" style="color: #F2F2f2;margin-left: 850px;">Login</span>
         <span class="r-name" href="{{ url_for('home') }}" style="color: #F2F2f2;margin-left: 20px;margin-right: 10px;">Sign Up</span>
         <span class="r-name" href="{{ url_for('home') }}" style="color: #F2F2f2;margin-left: 20px;margin-right: 0px;">About us</span>-->
         <!--<button class="more-info" style="background-color: #f2f2f2;margin-left: 950px;margin-right:20px;border: none;color:#EB5353;border-radius:5px"><a href="http://127.0.0.1:5000/signup" style="color: #eb5353;">Sign Up</a></button>-->
         {% if user["is_logged_in"] %}
-        <p style="margin-left: 30px;color:white;">Hi, {{user["name"]}}</p>
+        <p style="margin-left: 10px;color:white;padding:0px;height: 25px;width: 30px;">Hi, {{user["name"]}}</p>
         <button class="more-info" style="background-color: #f2f2f2;border: none;color:#EB5353;border-radius:5px;margin-left: 1000px;"><a href="http://127.0.0.1:5000/logout" style="color: #eb5353">Logout</a></button>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         {% else %}    
