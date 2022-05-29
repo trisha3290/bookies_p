@@ -110,7 +110,7 @@ def register():
 #adding a new record
 @app.route("/new")
 def new():
-    return render_template('new.html')
+    return render_template('new.html',user=person)
 @app.route("/add", methods=['POST','GET'])
 def add():
     if request.method == "POST":
@@ -131,7 +131,7 @@ def home():
 #rating change
 @app.route("/rating")
 def rating():
-    return render_template('rating.html')
+    return render_template('rating.html',user=person)
 @app.route("/change", methods=['GET','POST'])
 def change():
     if request.method == "POST":
