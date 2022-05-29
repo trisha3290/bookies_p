@@ -94,28 +94,32 @@
   <body>
     <div class="container">
       <div class="post">
-        <div class="text" style="font-family: Merriweather;">Your rating will contribute to the community </div>
+        <div class="text" style="font-family: Merriweather;">Your rating will contribute to the community. Please be logged in to rate. </div>
         
         </div>
         <div class="form-container">
         <form action="{{url_for('change')}}" method="POST" style="display: flex;flex-direction:column">
             <div class="star-widget">
-                <input type="radio" name="rate" id="rate-5" value="5">
+                <input type="radio" name="rate" id="rate-5" value="1">
                 <label for="rate-5" class="fas fa-star" ></label>
-                <input type="radio" name="rate" id="rate-4" value="4">
+                <input type="radio" name="rate" id="rate-4" value="2">
                 <label for="rate-4" class="fas fa-star"></label>
                 <input type="radio" name="rate" id="rate-3" value="3">
                 <label for="rate-3" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-2" value="2">
+                <input type="radio" name="rate" id="rate-2" value="4">
                 <label for="rate-2" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-1" value="1">
+                <input type="radio" name="rate" id="rate-1" value="5">
                 <label for="rate-1" class="fas fa-star"></label>
             </div>
             <div class="textarea" style="margin: auto;">
                 <!--<textarea cols="30" placeholder="Describe your experience.."></textarea>-->
                 <input type="number" name="book_id" placeholder="Enter the book id">
                 <div class="button-wrapper">
+                    {% if user["is_logged_in"] %}
                     <button type="submit" class="btn">RATE</button>
+                    {% else %}
+                    <button type="submit" class="btn" disabled>RATE</button>
+                    {%endif%}
                 </div>
             </div>
         </form>
