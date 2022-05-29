@@ -127,7 +127,7 @@
       <div class="left-part">
         <i class="fas fa-graduation-cap"></i>
         <h1>Add to our community</h1>
-        <p>You can add your own favorite book to the database and let others also read by just filling this form with appropriate details. Please give relevant information so as to keep the website healthy.</p>
+        <p>You can add your own favorite book to the database and let others also read by just filling this form with appropriate details. Please give relevant information so as to keep the website healthy. You need to be logged in to rate.</p>
         <!--<div class="btn-group">
           <a class="btn-item" href="https://www.w3docs.com/learn-html.html">Learn HTML</a>
           <a class="btn-item" href="https://www.w3docs.com/quiz/#">Select Quiz</a>
@@ -155,8 +155,11 @@
             <option value="mystery">mystery</option>
           </select>
         </div>
-        
+        {% if user["is_logged_in"] %}
         <button type="submit" href="/">Submit</button>
+        {% else %}
+        <button type="submit" class="btn" disabled>RATE</button>
+        {%endif%}
       </form>
     </div>
   </body>
